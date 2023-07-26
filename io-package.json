@@ -160,6 +160,15 @@
       }
     ]
   },
+  "adminUI": {
+      "config": "json"
+  },
+  "globalDependencies": [
+      {
+          "admin": ">=5.1.28"
+      }
+  ],
+
   "native": {
     "protocol": "SmlProtocol",
     "transport": "SerialResponseTransport",

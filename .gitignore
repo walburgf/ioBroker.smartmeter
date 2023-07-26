@@ -4,3 +4,6 @@
 .remote-sync.json
 node_modules
 .idea
+
+# ioBroker dev-server
+.dev-server/

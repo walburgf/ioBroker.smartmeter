@@ -1,0 +1,27 @@
+{
+    "i18n": true,
+    "items":{
+        "_options":{
+            "_smartmeter_logo":
+            {
+                "type":"staticImage",
+                "src":  "smartmeter.png",
+                "sm": 3,
+                "md": 2,
+                "lg": 1
+            },
+            "_smartmeter_logo_text":
+            {
+                "type":"staticText",
+                "label":  "page_title",
+                "text":  "page_title",
+                "sm": 6,
+                "md": 4,
+                "lg": 2
+            }
+                
+        }
+    }
+
+
+}

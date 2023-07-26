@@ -1,3 +1,6 @@
+# exclude all dot-files and directories
+.*
+
 Gruntfile.js
 tasks
 node_modules
@@ -19,4 +22,3 @@ package-lock.json
 .vscode/launch.json
 .remote-sync.json
 node_modules
-admin/i18n
