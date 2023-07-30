@@ -2,26 +2,1052 @@
     "i18n": true,
     "items":{
         "_options":{
-            "_smartmeter_logo":
-            {
-                "type":"staticImage",
-                "src":  "smartmeter.png",
-                "sm": 3,
-                "md": 2,
-                "lg": 1
-            },
-            "_smartmeter_logo_text":
-            {
-                "type":"staticText",
-                "label":  "page_title",
-                "text":  "page_title",
-                "sm": 6,
-                "md": 4,
-                "lg": 2
+            "type": "panel",
+            "items":{
+                    "_smartmeter_logo":
+                {
+                    "type":"staticImage",
+                    "src":  "smartmeter.png",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 20,
+                        "max-width": 100
+                    },
+                    "sm": 4,
+                    "md": 3,
+                    "lg": 2
+                },
+                "_Headline1":
+                {
+                    "type":"header",
+                    "text":  "page_title",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 25,
+                        "max-width": 500,
+                        "padding":20
+                    }
+                },
+
+
+                "_Headline2": {
+                    "newLine": true,
+                    "type": "header",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 20
+                    },
+                    "text": "heading_GeneralSettings"
+                },
+
+
+                "_selectTxt1": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_requestInterval",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                 },
+                "_staticLink1": {
+                    "type":"staticLink",
+                    "href": "https://github.com/Apollon77/ioBroker.smartmeter/#data-request-interval",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_requestInterval"
+                },
+
+                "requestInterval": {
+                    "type": "number",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "default": 10,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs": 3
+                    
+                },
+                "_appendixTxt1": {
+                    "type":"staticText",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "s",
+                    "sm": 1,
+                    "md": 1,
+                    "lg": 1,
+                    "xs":1
+                 },
+                 
+
+                "_selectTxt2": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_transport",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink2": {
+                    "type":"staticLink",
+                    "href": "https://github.com/Apollon77/ioBroker.smartmeter/#data-transfer",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_transport"
+                },
+                "transport": {
+                    "type": "select",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                     "options": [
+                        {"label": "value_transport_HttpRequestTransport" , "value": 1},
+                        {"label": "value_transport_LocalFileTransport" , "value": 2},
+                        {"label": "value_transport_SerialRequestResponseTransport" , "value": 3},
+                        {"label": "value_transport_SerialResponseTransport", "value": 4},
+                        {"label": "value_transport_TCPTransport", "value": 5}
+                    ],
+                    "default": 4,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":3
+                },
+
+                "_selectTxt3": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_protocol",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink3": {
+                    "type":"staticLink",
+                    "href": "https://github.com/Apollon77/ioBroker.smartmeter/#data-protocol",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_protocol"
+                },
+                "protocol": {
+                    "type": "select",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                     "options": [
+                        {"label": "value_protocol_D0Protocol" , "value": 1},
+                        {"label": "value_protocol_JsonEfrProtocol" , "value": 2},
+                        {"label": "value_protocol_SmlProtocol" , "value": 3}
+                    ],
+                    "default": 3,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":3
+                },
+                "_selectTxt4": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_obisNameLanguage",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink4": {
+                    "type":"staticLink",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_obisNameLanguage"
+                },
+                "obisNameLanguage": {
+                    "type": "select",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                     "options": [
+                        {"label": "value_obisNameLanguage_de" , "value": 1},
+                        {"label": "value_obisNameLanguage_en" , "value": 2}
+                    ],
+                    "default": "",
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":3
+                },
+
+                "_Headline3": {
+                    "newLine": true,
+                    "type": "header",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 20
+                    },
+                    "text": "heading_TransportSpecificSettings"
+                },
+
+
+                "_selectTxt5": {
+                    "newLine": true,
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "type":"staticText",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_transportSerialPort",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink5": {
+                    "type":"staticLink",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_transportSerialPort"
+                },
+                "transportSerialPort": {
+                    "type": "select",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                     "options": [
+                        {"label": "Please wait till port list is loaded ..." , "value": 1}
+                    ],
+                    "default": 1,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":3
+                },
+
+                "_selectTxt6": {
+                    "newLine": true,
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "type":"staticText",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_transportSerialBaudrate",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink6": {
+                    "type":"staticLink",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "href": "https://github.com/Apollon77/ioBroker.smartmeter/#serial-device-baudrate",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_transportSerialBaudrate"
+                },
+                "transportSerialBaudrate": {
+                    "type": "number",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "default": 10,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs": 3
+                    
+                },
+                "_appendixTxt6": {
+                    "type":"staticText",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "baud",
+                    "sm": 1,
+                    "md": 1,
+                    "lg": 1,
+                    "xs":1
+                 },
+
+                 "_selectTxt7": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_transportSerialDataBits",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink7": {
+                    "type":"staticLink",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_transportSerialDataBits"
+                },
+                "transportSerialDataBits": {
+                    "type": "select",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                     "options": [
+                        {"label": "value_protocol_default" , "value": 1},
+                        {"label": "8" , "value": 8},
+                        {"label": "7" , "value": 7},
+                        {"label": "6", "value": 6},
+                        {"label": "5", "value": 5}
+                    ],
+                    "default": 1,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":3
+                },
+
+                "_selectTxt8": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_transportSerialStopBits",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink8": {
+                    "type":"staticLink",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_transportSerialStopBits"
+                },
+                "transportSerialStopBits": {
+                    "type": "select",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                     "options": [
+                        {"label": "value_protocol_default" , "value": 0},
+                        {"label": "1" , "value": 1},
+                        {"label": "2" , "value": 2}
+                    ],
+                    "default": 0,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":3
+                },
+
+                "_selectTxt9": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_transportSerialParity",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink9": {
+                    "type":"staticLink",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_transportSerialParity"
+                },
+                "transportSerialParity": {
+                    "type": "select",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                     "options": [
+                        {"label": "value_protocol_default" , "value": 0},
+                        {"label": "none" , "value": 1},
+                        {"label": "even" , "value": 2},
+                        {"label": "mark" , "value": 3},
+                        {"label": "odd" , "value": 4},
+                        {"label": "space" , "value": 5}
+                    ],
+                    "default": 0,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":3
+                },
+ 
+                "_selectTxt10": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_transportSerialMessageTimeout",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                 },
+                 "_staticLink10": {
+                    "type":"staticLink",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_transportSerialMessageTimeout"
+                },
+
+                "transportSerialMessageTimeout": {
+                    "type": "number",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "default": 10,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs": 3
+                    
+                },
+                "_appendixTxt10": {
+                    "type":"staticText",
+                    "hidden": "data.transport !== 3 && data.transport !== 4",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "s",
+                    "sm": 1,
+                    "md": 1,
+                    "lg": 1,
+                    "xs":1
+                 },
+
+
+                 "_selectTxt20": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.transport !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_transportHttpRequestUrl",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink20": {
+                    "type":"staticLink",
+                    "hidden": "data.transport !== 1",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_transportHttpRequestUrl"
+                },
+
+                "transportHttpRequestUrl": {
+                    "type": "text",
+                    "hidden": "data.transport !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "default": "",
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs": 3
+                },
+
+                "_selectTxt21": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.transport !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_transportHttpRequestTimeout",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                 },
+                 "_staticLink21": {
+                    "type":"staticLink",
+                    "hidden": "data.transport !== 1",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_transportHttpRequestTimeout"
+                },
+
+                "transportHttpRequestTimeout": {
+                    "type": "number",
+                    "hidden": "data.transport !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs": 3
+                    
+                },
+                "_appendixTxt21": {
+                    "type":"staticText",
+                    "hidden": "data.transport !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "ms",
+                    "sm": 1,
+                    "md": 1,
+                    "lg": 1,
+                    "xs":1
+                 },
+
+                 "_selectTxt30": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.transport !== 2",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_transportLocalFilePath",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink30": {
+                    "type":"staticLink",
+                    "hidden": "data.transport !== 2",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_transportLocalFilePath"
+                },
+
+                "transportLocalFilePath": {
+                    "type": "text",
+                    "hidden": "data.transport !== 2",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "default": "",
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs": 3
+                },
+
+                "_selectTxt40": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.transport !== 5",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_transportTcpHost",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink40": {
+                    "type":"staticLink",
+                    "hidden": "data.transport !== 5",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_transportTcpHost"
+                },
+
+                "transportTcpHost": {
+                    "type": "text",
+                    "hidden": "data.transport !== 5",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "default": "",
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs": 3
+                },
+
+                "_selectTxt41": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.transport !== 5",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_transportTcpPort",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                 },
+                 "_staticLink41": {
+                    "type":"staticLink",
+                    "hidden": "data.transport !== 5",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_transportTcpPort"
+                },
+
+                "transportTcpPort": {
+                    "type": "number",
+                    "hidden": "data.transport !== 5",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs": 3   
+                },
+
+                "_Headline4": {
+                    "newLine": true,
+                    "type": "header",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 20
+                    },
+                    "text": "heading_ProtocolSpecificSettings"
+                },
+
+                "_selectTxt100": {
+                    "newLine": true,
+                    "hidden": "data.protocol !== 1",
+                    "type":"staticText",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_protocolD0WakeupCharacters",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink100": {
+                    "type":"staticLink",
+                    "hidden": "data.protocol !== 1",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_protocolD0WakeupCharacters"
+                },
+                "protocolD0WakeupCharacters": {
+                    "type": "number",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "default": 0,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs": 3
+                },
+                "_selectTxt101": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_protocolD0DeviceAddress",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink101": {
+                    "type":"staticLink",
+                    "hidden": "data.protocol !== 1",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_protocolD0DeviceAddress"
+                },
+
+                "protocolD0DeviceAddress": {
+                    "type": "text",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "default": "",
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs": 3
+                },
+                "_selectTxt102": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_protocolD0SignOnMessage",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink102": {
+                    "type":"staticLink",
+                    "hidden": "data.protocol !== 1",
+                    "button":true,
+                    "href": "https://github.com/Apollon77/ioBroker.smartmeter/#d0-signon-message-command",
+                    "icon":"info",
+                    "tooltip": "info_protocolD0SignOnMessage"
+                },
+
+                "protocolD0SignOnMessage": {
+                    "type": "text",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "default": "",
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs": 3
+                },
+                "_selectTxt103": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_protocolD0ModeOverwrite",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink103": {
+                    "type":"staticLink",
+                    "hidden": "data.protocol !== 1",
+                    "href": "https://github.com/Apollon77/ioBroker.smartmeter/#d0-mode-overwrite",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_protocolD0ModeOverwrite"
+                },
+                "protocolD0ModeOverwrite": {
+                    "type": "select",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                     "options": [
+                        {"label": "value_no_overwrite" , "value": 1},
+                        {"label": "A" , "value": 2},
+                        {"label": "B" , "value": 3},
+                        {"label": "C", "value": 4},
+                        {"label": "D", "value": 5},
+                        {"label": "E", "value": 6}
+                    ],
+                    "default": 1,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":3
+                },
+                "_selectTxt104": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_protocolD0BaudrateChangeoverOverwrite",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink104": {
+                    "type":"staticLink",
+                    "hidden": "data.protocol !== 1",
+                    "button":true,
+                    "icon":"info",
+                    "href": "https://github.com/Apollon77/ioBroker.smartmeter/#d0--baudrate-changeover-overwrite",
+                    "tooltip": "info_protocolD0BaudrateChangeoverOverwrite"
+                },
+
+                "protocolD0BaudrateChangeoverOverwrite": {
+                    "type": "number",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "default": "",
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs": 3
+                },
+                "_appendixTxt104": {
+                    "type":"staticText",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "baud",
+                    "sm": 1,
+                    "md": 1,
+                    "lg": 1,
+                    "xs":1
+                 },
+                 "_selectTxt105": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_anotherQueryDelay",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink105": {
+                    "type":"staticLink",
+                    "hidden": "data.protocol !== 1",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_anotherQueryDelay"
+                },
+                "anotherQueryDelay": {
+                    "type": "number",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "default": "",
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs": 3
+                },
+                "_appendixTxt105": {
+                    "type":"staticText",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "ms",
+                    "sm": 1,
+                    "md": 1,
+                    "lg": 1,
+                    "xs":1
+                 },
+                 "_selectTxt106": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.protocol !== 3",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_protocolSmlIgnoreInvalidCRC",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink106": {
+                    "type":"staticLink",
+                    "hidden": "data.protocol !== 3",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_protocolSmlIgnoreInvalidCRC"
+                },
+                "protocolSmlIgnoreInvalidCRC": {
+                    "type": "checkbox",
+                    "hidden": "data.protocol !== 3",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                    "default": false,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":3
+                },
+                "_selectTxt107": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.protocol !== 3",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_protocolSmlInputEncoding",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink107": {
+                    "type":"staticLink",
+                    "hidden": "data.protocol !== 3",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_protocolSmlInputEncoding"
+                },
+                "protocolSmlInputEncoding": {
+                    "type": "select",
+                    "hidden": "data.protocol !== 3",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                     "options": [
+                        {"label": "value_protocolSmlInputEncoding_binary" , "value": ""},
+                        {"label": "ascii" , "value": "ascii"},
+                        {"label": "utf-8" , "value": "utf-8"},
+                        {"label": "base64", "value": "base64"}
+                    ],
+                    "default": 1,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":3
+                },
+                "_selectTxt108": {
+                    "newLine": true,
+                    "type":"staticText",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 17
+                    },
+                    "text": "field_obisFallbackMedium",
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":2
+                },
+                "_staticLink108": {
+                    "type":"staticLink",
+                    "hidden": "data.protocol !== 1",
+                    "button":true,
+                    "icon":"info",
+                    "tooltip": "info_obisFallbackMedium"
+                },
+                "obisFallbackMedium": {
+                    "type": "select",
+                    "hidden": "data.protocol !== 1",
+                    "style":  {
+                        "color": "black",    
+                        "font-size": 15
+                    },
+                     "options": [
+                        {"label": "value_obisFallbackMedium_0", "value": 0},
+                        {"label": "value_obisFallbackMedium_1", "value": 1},
+                        {"label": "value_obisFallbackMedium_4", "value": 4},
+                        {"label": "value_obisFallbackMedium_5", "value": 5},
+                        {"label": "value_obisFallbackMedium_6", "value": 6},
+                        {"label": "value_obisFallbackMedium_7", "value": 7},
+                        {"label": "value_obisFallbackMedium_8", "value": 8},
+                        {"label": "value_obisFallbackMedium_9", "value": 9},
+                        {"label": "value_obisFallbackMedium_16", "value": 16},
+                        {"label": "value_obisFallbackMedium_17", "value": 17},
+                        {"label": "value_obisFallbackMedium_18", "value": 18}
+                    ],
+                    "default": "",
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
+                    "xs":3
+                }
+
+
             }
                 
         }
     }
-
-
 }

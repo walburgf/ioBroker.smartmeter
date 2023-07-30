@@ -78,5 +78,8 @@
     "value_transport_LocalFileTransport": "Odczytaj dane z pliku lokalnego",
     "value_transport_SerialRequestResponseTransport": "Urządzenie szeregowe z Bi-reż. ",
     "value_transport_SerialResponseTransport": "Urządzenie szeregowe odczytuje tylko dane",
-    "value_transport_TCPTransport": "TCP Urządzenie odczytuje tylko dane"
+    "value_transport_TCPTransport": "TCP Urządzenie odczytuje tylko dane",
+    "option 1 washing machine": "opcja 1 pralka",
+    "option 2 heat pump": "opcja 2 pompa ciepła",
+    "option 3 That'a a": "opcja 3 To a"
 }

@@ -78,5 +78,8 @@
     "value_transport_LocalFileTransport": "Daten aus einer lokalen Datei lesen",
     "value_transport_SerialRequestResponseTransport": "Serielles Gerät mit bidir. Komm.",
     "value_transport_SerialResponseTransport": "Serielle Daten werden nur gelesen",
-    "value_transport_TCPTransport": "Netzwerk/TCP-Daten werden nur gelesen"
+    "value_transport_TCPTransport": "Netzwerk/TCP-Daten werden nur gelesen",
+    "option 1 washing machine": "Option 1 Waschmaschine",
+    "option 2 heat pump": "Option 2 Wärmepumpe",
+    "option 3 That'a a": "Option 3 Das ist ein"
 }

@@ -78,5 +78,8 @@
     "value_transport_LocalFileTransport": "Lees gegevens uit een lokaal bestand",
     "value_transport_SerialRequestResponseTransport": "Serieel apparaat met Bi-dir. ",
     "value_transport_SerialResponseTransport": "Alleen seriële apparaten lezen gegevens",
-    "value_transport_TCPTransport": "Alleen TCP-apparaat leest gegevens"
+    "value_transport_TCPTransport": "Alleen TCP-apparaat leest gegevens",
+    "option 1 washing machine": "optie 1 wasmachine",
+    "option 2 heat pump": "optie 2 warmtepomp",
+    "option 3 That'a a": "optie 3 Dat is een"
 }

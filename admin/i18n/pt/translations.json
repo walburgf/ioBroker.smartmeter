@@ -78,5 +78,8 @@
     "value_transport_LocalFileTransport": "Ler dados de um arquivo local",
     "value_transport_SerialRequestResponseTransport": "Dispositivo serial com Bi-dir. ",
     "value_transport_SerialResponseTransport": "Dados de leitura do dispositivo serial apenas",
-    "value_transport_TCPTransport": "Dados de leitura do dispositivo TCP apenas"
+    "value_transport_TCPTransport": "Dados de leitura do dispositivo TCP apenas",
+    "option 1 washing machine": "opção 1 máquina de lavar",
+    "option 2 heat pump": "bomba de calor opção 2",
+    "option 3 That'a a": "opção 3 Isso é um"
 }

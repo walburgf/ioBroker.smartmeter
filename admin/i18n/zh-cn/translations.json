@@ -78,5 +78,8 @@
     "value_transport_LocalFileTransport": "从本地文件读取数据",
     "value_transport_SerialRequestResponseTransport": "具有双向目录的串行设备。",
     "value_transport_SerialResponseTransport": "串行设备仅读取数据",
-    "value_transport_TCPTransport": "TCP设备仅读取数据"
+    "value_transport_TCPTransport": "TCP设备仅读取数据",
+    "option 1 washing machine": "选项 1 洗衣机",
+    "option 2 heat pump": "选项 2 热泵",
+    "option 3 That'a a": "选项 3 这是一个"
 }

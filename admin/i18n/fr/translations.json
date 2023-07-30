@@ -78,5 +78,8 @@
     "value_transport_LocalFileTransport": "Lire les données à partir d'un fichier local",
     "value_transport_SerialRequestResponseTransport": "Périphérique série avec Bi-dir. ",
     "value_transport_SerialResponseTransport": "Périphérique série lisant uniquement les données",
-    "value_transport_TCPTransport": "Périphérique TCP lisant uniquement les données"
+    "value_transport_TCPTransport": "Périphérique TCP lisant uniquement les données",
+    "option 1 washing machine": "possibilité 1 machine à laver",
+    "option 2 heat pump": "possibilité 2 pompe à chaleur",
+    "option 3 That'a a": "option 3 C'est un"
 }

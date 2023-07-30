@@ -78,5 +78,8 @@
     "value_transport_LocalFileTransport": "Чтение данных из локального файла",
     "value_transport_SerialRequestResponseTransport": "Последовательное устройство с Bi-dir. ",
     "value_transport_SerialResponseTransport": "Только данные чтения последовательного устройства",
-    "value_transport_TCPTransport": "Только данные устройства TCP для чтения"
+    "value_transport_TCPTransport": "Только данные устройства TCP для чтения",
+    "option 1 washing machine": "вариант 1 стиральная машина",
+    "option 2 heat pump": "вариант 2 тепловой насос",
+    "option 3 That'a a": "вариант 3"
 }
